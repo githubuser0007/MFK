@@ -1,1 +1,1 @@
-mfk是一个简单易用的Java web框架。
+mfk是一个简单易用的java web框架。
