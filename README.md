@@ -63,10 +63,20 @@
             }
         }
 
+2. 然后在step 1中的AppConfig类中，添加如下配置：  
 
-
-
-
-
-
+        @Override
+        public void configRoute(RouteManager routeManager) {
+            //此处进行访问地址配置
+            routeManager.addRoute("/getUser", UserController.class, "getUser");
+        }
+### step 4  
+至此，一个基本的功能就配置完毕了。  
+发布程序，启动服务，在浏览器输入localhost:8080/getUser?userName=test即可见到后端控制台输出响应信息。
+### 进阶
+* 数据库增删改查
+* 缓存的配置使用
+* 拦截器的使用
+### 示例
+[Demo下载地址](https://github.com/mfk11/MFK)
 
