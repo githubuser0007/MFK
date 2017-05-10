@@ -1,4 +1,4 @@
-# MFK - 一款简单易用的JAVA WEB框架
+# MFK（码法咖） - 一款简单易用的JAVA WEB框架
 ### 概述
     码法咖（MFK）是基于Filter实现的MVC框架。
 * 配置简化  
