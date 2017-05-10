@@ -52,9 +52,16 @@
 此处需要注意，尽量将此filter配置在其它filter之后，否则无法将整个项目纳入到框架中。   
 ### step 3
 完成step 2就已经将框架纳入到项目中了，下面就可以开始开发之旅了。  
-1. 首先新建一个UserController类，此类需要继承Controller类，用于业务逻辑处理，如下：
+1. 首先新建一个UserController类，此类需要继承Controller类，用于业务逻辑处理，如下：  
 
-
+        public class UserController extends Controller {
+            public VoidRenderer getUser() {
+                //取到前端传递的参数
+                String userName = getParameter("userName");
+                System.out.println("user is " + userName);
+                return new VoidRenderer();
+            }
+        }
 
 
 
